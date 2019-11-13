@@ -1,14 +1,15 @@
 # Rekognition
-Avisa no Slack quando uma imagem é adicionada no bucket da S3.
+This application was created in Beck Et Al Brazil using an AWS Deeplens
 
-Neessário ter um bucket na Amazon S3 com uma pasta com o nome de imagens, uma collection com o nome de Faces e um app no Slack
-
-Crie uma lamnda function e faça o upload do rekognition.zip.
-Adicione o nome do bucket, nome da collection, token do app do Slack e o um canal do Slack;
-Crie um gatilho para a função esperando um evento em "images/" com o sufixo ".jpg"
-
-
-Salve a função e adicione uma foto ao bucket para criar uma tabela no DynamoDB. Confira no mesmo se a tabela foi criada e adicione um # em return createTable() (linha 33)
-
-Adicione mais uma foto para que seja criado uma Face no serviço Rekognition.
+<h4>Preparation</h4>
+<ul>
+  <li>Create a bucket in S3 with "Block all public access" unchecked;</li>
+  <li>Create a collection Faces in the Rekognition service. <a href='https://docs.aws.amazon.com/rekognition/latest/dg/create-collection-procedure.html' target='_blank'>Documentation</a>;</li>
+  <li>Create a app with a bot in Slack and save the Bot User OAuth Access Token. <a href='https://slack.com/intl/pt-br/help/articles/115005265703-criar-um-bot-para-o-workspace' target='_blank'>Documentation</a>;</li>
+  <li>Create a Lambda Function with a trigger in your bucket. Set the prefix with "images/" and the sufix with ".jpg";</li>
+  <li>Upload the function.zip to the Lambda Function;</li>
+  <li>Add the Slack Token, Slack Channel, name of the bucket and the collection Id the variables of the code;</li>
+  <li>Save and add a jpg file in the folder images of your bucket. This will create a table in DynamoDB;</li>
+  <li>Comment the line 33 (return createTable()) and add a jpg file again;</li>
+</ul>
 
