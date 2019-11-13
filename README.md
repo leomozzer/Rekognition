@@ -1,9 +1,11 @@
 # Rekognition
 This application was created in Beck Et Al Brazil using an AWS Deeplens.
+<b>It is not necessary to use a Deeplens. This function will run every time that a jpg file is added in the bucket </b>
 
 <h4>Preparation</h4>
 <ul>
   <li>Create a bucket in S3 with "Block all public access" unchecked;</li>
+  <li>In the IAM page, create function with FullAccess and a user with FullAccess permissions;</li>
   <li>Create a collection Faces in the Rekognition service. <a href='https://docs.aws.amazon.com/rekognition/latest/dg/create-collection-procedure.html' target='_blank'>Documentation</a>;</li>
   <li>Create a app with a bot in Slack and save the Bot User OAuth Access Token. <a href='https://slack.com/intl/pt-br/help/articles/115005265703-criar-um-bot-para-o-workspace' target='_blank'>Documentation</a>;</li>
   <li>Create a Lambda Function with a trigger in your bucket. Set the prefix with "images/" and the sufix with ".jpg";</li>
