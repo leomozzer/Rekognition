@@ -13,3 +13,16 @@ This application was created in Beck Et Al Brazil using an AWS Deeplens
   <li>Comment the line 33 (return createTable()) and add a jpg file again;</li>
 </ul>
 
+<h4>Todo</h4>
+<ul>
+  <li>Create a table in DynamoDB automatically</li>
+  <li>Create the Face colletion automatically</li>
+</ul>
+
+<h4>References</h4>
+<ul>
+  <li>Track the number of cofffes consumed. <a href='https://aws.amazon.com/pt/blogs/machine-learning/track-the-number-of-coffees-consumed-using-aws-deeplens/'>Link</a>;</li>
+  <li>Doorman. <a href='https://aws.amazon.com/pt/deeplens/community-projects/Doorman/'>Link</a>;</li>
+  <li>Python and DynamoDB. <a href='https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Python.html'>Link</a>;</li>
+  <li>Rekognition Service. <a href='https://docs.aws.amazon.com/rekognition/latest/dg/collections.html'>Link</a>;</li>
+</ul>
