@@ -1,5 +1,5 @@
 # Rekognition
-This application was created in Beck Et Al Brazil using an AWS Deeplens
+This application was created in Beck Et Al Brazil using an AWS Deeplens.
 
 <h4>Preparation</h4>
 <ul>
